@@ -10,15 +10,15 @@ package tasks;
 public class Your_order_please {
     public static String order(String words){
         String[] array = words.split(" ");
-        StringBuilder str = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
-        for (int i = 1; i < array.length + 1; i++) {
+        for (int i = 1; i <= array.length; i++) {
             for (String tempStr : array){
                 if (tempStr.contains(String.valueOf(i)))
-                    str.append(tempStr + " ");
+                    builder.append(tempStr + " ");
             }
         }
 
-        return str.toString().trim();
+        return builder.toString().trim();
     }
 }

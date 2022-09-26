@@ -3,7 +3,7 @@ package tasks;
 //Вам предлагается возвести в квадрат каждую цифру числа и объединить их.
 
 public class Square_Every_Digit {
-    public int squareDigits(int n) {
+    public static int squareDigits(int n) {
         if (n < 1)
             return 0;
 

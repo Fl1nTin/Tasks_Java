@@ -4,10 +4,10 @@ package tasks;
 
 public class Break_camelCase {
     public static String camelCase(String input) {
-        String str = "";
+        StringBuilder sb = new StringBuilder();
         for (char ch : input.toCharArray()) {
-            str += Character.isUpperCase(ch) ? " " + ch : ch;
+            sb.append(Character.isUpperCase(ch) ? " " + ch : ch);
         }
-        return str;
+        return sb.toString();
     }
 }

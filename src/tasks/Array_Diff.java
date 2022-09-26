@@ -11,19 +11,13 @@ import java.util.stream.Collectors;
 
 public class Array_Diff {
     public static int[] arrayDiff(int[] a, int[] b) {
-        if (b.length == 0)
-            return a;
-        if (a.length == 0)
+        if (a == null || b == null)
             return a;
 
         List<Integer> listA = Arrays.stream(a).boxed().collect(Collectors.toList());
         List<Integer> listB = Arrays.stream(b).boxed().collect(Collectors.toList());
         listA.removeAll(listB);
 
-        a = new int[listA.size()];
-        for (int i = 0; i < a.length; i++) {
-            a[i] = listA.get(i);
-        }
-        return a;
+        return listA.stream().mapToInt(value -> value).toArray();
     }
 }

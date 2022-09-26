@@ -7,11 +7,10 @@ public class Credit_Card_Mask {
         if (str.length() < 4)
             return str;
 
-        String newStr = "";
-        for (int i = 0; i < str.length() - 4; i++) {
-            newStr += "#";
-        }
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < str.length() - 4; i++)
+            builder.append("#");
 
-        return newStr += str.substring(str.length() - 4);
+        return builder.append(str.substring(str.length() - 4)).toString();
     }
 }
