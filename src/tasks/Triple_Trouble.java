@@ -18,9 +18,6 @@ public class Triple_Trouble {
             return 0;
 
         String twoNum = String.valueOf(num2);
-        if (twoNum.contains(s))
-            return 1;
-        else
-            return 0;
+        return twoNum.contains(s)? 1 : 0;
     }
 }
