@@ -5,6 +5,7 @@ package tasks;
 то она должна заменить отсутствующий второй символ последней пары символом подчеркивания ('_').
 * 'abc' =>  ['ab', 'c_']
 * 'abcdef' => ['ab', 'cd', 'ef']*/
+
 public class String_Split {
     public static String[] solution(String s) {
         String[] strings = new String[(int)Math.ceil(s.length() / 2.)];
