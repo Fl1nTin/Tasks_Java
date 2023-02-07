@@ -4,6 +4,7 @@ package tasks;
 но со всеми пятью или более буквенными словами наоборот.
 Передаваемые строки будут состоять только из букв и пробелов.
 Пробелы будут включены только в том случае, если присутствует более одного слова.*/
+
 public class Spin_Words {
     public static String spinWords(String sentence) {
         for (String i : sentence.split(" ")) {
