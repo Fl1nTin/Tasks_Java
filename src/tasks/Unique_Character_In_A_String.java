@@ -3,7 +3,7 @@ package tasks;
 import java.util.HashSet;
 import java.util.Set;
 
-//Напишите функцию, которая определяет уникальны ли все символы в строке. Регистр должен учитываться
+//Напишите функцию, которая определяет уникальны ли все символы в строке. Регистр должен учитываться.
 
 public class Unique_Character_In_A_String {
     public static boolean isUnique(String str){

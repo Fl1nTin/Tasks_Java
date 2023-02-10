@@ -14,6 +14,7 @@ public class Triple_Trouble {
                 break;
             }
         }
+
         if (s.length() < 2)
             return 0;
 
